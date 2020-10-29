@@ -25,6 +25,15 @@ const BoardContainer = styled(motion.div).attrs(() => ({
   align-items: center;
 `;
 
+const Heading = styled.h1`
+  color: #fff;
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 4rem;
+  text-shadow: -3px 3px #00000066;
+  font-family: "Varela Round";
+`;
+
 type GameState = "start" | "game" | "reset";
 
 function App() {
@@ -47,7 +56,7 @@ function App() {
 
   return (
     <>
-      <h1>Typescript Tic-Tac-Toe</h1>
+      <Heading>Typescript Tic-Tac-Toe</Heading>
       <BoardContainer animate={gameState}>
         {{
           start: <StartScreen onStart={onStart} />,
