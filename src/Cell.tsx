@@ -1,7 +1,5 @@
 import React, { FC } from 'react';
 import styled from 'styled-components';
-// import { GrFormClose } from "react-icons/gr";
-// import { BiCircle } from "react-icons/bi";
 import circle from "./circle.svg"
 import cancel from "./cancel.svg"
 import { motion } from 'framer-motion';
@@ -24,8 +22,8 @@ const Shape = styled(motion.img).attrs(() => ({
   initial: "hidden",
   variants
 }))`
-  height: 60px;
-  width: 60px;
+  height: 40px;
+  width: 40px;
   position: absolute;
   top: 50%;
   left: 50%;

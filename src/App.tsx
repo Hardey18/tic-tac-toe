@@ -6,9 +6,9 @@ import { ResetSCreen } from './ResetScreen';
 import { StartScreen } from './StartScreen';
 
 const variants = {
-  start: { opacity: 1, scale: 1, width: "200px", height: "100px", transition: { type: "spring", duration: 0.8 } },
-  game: { opacity: 1, scale: 1, width: "500px", height: "500px", transition: { type: "spring", duration: 0.8 } },
-  reset: { opacity: 1, scale: 1, width: "350px", height: "300px", transition: { type: "spring", duration: 0.8 } },
+  start: { opacity: 1, scale: 1, width: "100px", height: "50px", transition: { type: "spring", duration: 0.8 } },
+  game: { opacity: 1, scale: 1, width: "250px", height: "250px", transition: { type: "spring", duration: 0.8 } },
+  reset: { opacity: 1, scale: 1, width: "175px", height: "150px", transition: { type: "spring", duration: 0.8 } },
   hidden: { opacity: 0, scale: 0.8 }
 }
 
@@ -23,6 +23,7 @@ const BoardContainer = styled(motion.div).attrs(() => ({
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 `;
 
 const Heading = styled.h1`
