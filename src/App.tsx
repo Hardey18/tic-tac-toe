@@ -57,7 +57,7 @@ function App() {
 
   return (
     <>
-      <Heading>Typescript Tic-Tac-Toe</Heading>
+      <Heading>Tic-Tac-Toe</Heading>
       <BoardContainer animate={gameState}>
         {{
           start: <StartScreen onStart={onStart} />,
